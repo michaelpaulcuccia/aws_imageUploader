@@ -1,11 +1,14 @@
 import React from 'react';
-import Uploader from './Uploader';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Uploader from './components/Uploader';
 
 const App = () => {
   return (
-    <div>
-      <Uploader />
-    </div>
+    <Router>
+      <Route path='/' component={Home} exact />
+      <Route path='/uploader' component={Uploader} exact />
+    </Router>
   )
 }
 
