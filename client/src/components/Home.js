@@ -1,9 +1,19 @@
 import React from 'react'
 
-const Home = () => {
+const Home = ({ history }) => {
+
+
+    const buttonHandler = () => {
+        history.push('/uploader')
+    }
+
     return (
         <div>
-            Welcome to AWS Photo Uploader!
+            <p>Welcome to AWS Photo Uploader!</p>
+            <br></br>
+            <div>
+                <button type='button' onClick={buttonHandler}>Vist Uploader Component</button>
+            </div>
         </div>
     )
 }

@@ -58,6 +58,10 @@ const Uploader = ({ history }) => {
         window.location.reload(false)
     }
 
+    const returnHomeHandler = () => {
+        history.push('/');
+    }
+
     return (
         <div>
             <h2>Upload Image</h2>
@@ -76,6 +80,8 @@ const Uploader = ({ history }) => {
             }
 
             <div id="successImage"></div>
+
+            <button type='button' onClick={returnHomeHandler}>Home</button>
         </div>
     )
 }
