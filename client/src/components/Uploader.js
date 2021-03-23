@@ -34,7 +34,7 @@ const Uploader = ({ history }) => {
                 firstDOMElement.innerHTML = `${fileName} successfully uploaded!`;
 
                 //update DOM 2 of 2 - Show Uploaded Image
-                urlString = `https://imagertesterbucketer.s3.amazonaws.com/${fileName}`;
+                urlString = `https://sellersmarketcms.s3.amazonaws.com/${fileName}`;
                 const secondDOMElement = document.getElementById('successImage');
                 image = document.createElement('img');
                 image.src = urlString;
